@@ -1,12 +1,27 @@
 {
   "name": "home-bank",
   "version": "1.0.0",
-  "description": "",
+  "description": "child financial education",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "George Williams",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/george412williams/Home-Banking.git"
+  },
+  "bugs": {
+    "url": "https://github.com/george412williams/Home-Banking/issues"
+  },
+  "homepage": "https://github.com/george412williams/Home-Banking#readme",
+  "dependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.44.2"
+  }
 }
