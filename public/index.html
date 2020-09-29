@@ -3,8 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--ANIMATE.CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
+<style>
+    body {
+
+    }
+
+    .navbar {
+        height: 4rem;
+    }
+
+    .navbar-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .nav-item {
+        color: white;
+        padding: 1rem;
+    }
+
+    .userHeader {
+        text-align: center;
+    }
+
+    #userList {
+        list-style: none;
+
+    }
+
+    .user-select {
+
+    }
+
+    .selection {
+
+    }
+</style>
 <body>
+
+<nav class="navbar bg-dark static-top">
+<!--    <div class="container">-->
+<!--        <div class="navbar-collapse collapse">-->
+            <ul class="navbar-nav" id="navList">
+                <li class="nav-item">Main</li>
+                <li class="nav-item">Secondary</li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Search</li>
+            </ul>
+<!--        </div>-->
+<!--    </div>-->
+</nav>
+
+<header>
+    <h1>Welcome to Home Banking</h1>
+</header>
+<br>
+<div class="container selection">
+    <div class="header">Users</div>
+        <ul id="userList row">
+            <li class="user-select">
+                <a href="">Colin</a>
+            </li>
+            <li class="user-select">
+                <a href="">Lucy</a>
+            </li>
+            <li class="user-select">
+                <a href="">Joss</a>
+            </li>
+        </ul>
+</div>
+
+<div class="container">
+    <div class="signup-form">
+        <h4>Account Information</h4>
+        <h6>Amount: $5</h6>
+        <form action="">
+            <label for="add-funds">Add Funds </label>
+            <input type="number" name="add-funds" id="add-funds" placeholder="Number only">
+            <button type="submit" class="btn btn-primary">Add It</button>
+        </form>
+        <div>
+            Transaction History Table
+        </div>
+    </div>
+
+</div>
+
+<script src="./main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
 </html>
