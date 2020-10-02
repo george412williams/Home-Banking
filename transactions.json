@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "name": null,
+      "current-amount": 0,
+      "deposit": 0,
+      "withdrawl": 0,
+      "date": null,
+      "comment": null
+    }
+  ]
+}
