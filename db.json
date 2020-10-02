@@ -1,0 +1,23 @@
+{
+  "accounts": [
+    {
+      "name": "Colin",
+      "id": 1,
+      "type": null,
+      "current-amount": 1
+    },
+    {
+      "name": "Lucy",
+      "id": 2,
+      "type": null,
+      "current-amount": 1
+    },
+    {
+      "name": "Joss",
+      "id": 3,
+      "type": null,
+      "current-amount": 1
+    }
+
+  ]
+}
