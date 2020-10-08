@@ -8,8 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 <style>
-    body {
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial;
+    }
 
+    .tablink {
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+    }
+
+    .tabcontent {
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+    }
+
+    #Colin {
+        background-color: lightcoral;
+    }
+
+    #Lucy {
+        background-color: cyan;
+    }
+
+    #Joss {
+        background-color: burlywood;
     }
 
     .navbar {
@@ -64,42 +94,122 @@
     <h1>Welcome to Home Banking</h1>
 </header>
 <br>
-<div class="container selection">
-    <div class="header">Users</div>
-        <ul id="userList row">
-            <li class="user-select">
-                <a href="">Colin</a>
-            </li>
-            <li class="user-select">
-                <a href="">Lucy</a>
-            </li>
-            <li class="user-select">
-                <a href="">Joss</a>
-            </li>
-        </ul>
+<!--<div class="container selection">-->
+<!--    <div class="header">Users</div>-->
+<!--        <ul id="userList row">-->
+<!--            <li class="user-select">-->
+<!--                <a href="">Colin</a>-->
+<!--            </li>-->
+<!--            <li class="user-select">-->
+<!--                <a href="">Lucy</a>-->
+<!--            </li>-->
+<!--            <li class="user-select">-->
+<!--                <a href="">Joss</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--</div>-->
+
+
+<div>
+    <button class="tablink" onclick="openTab('Colin', this)">Colin</button>
+    <button class="tablink" onclick="openTab('Lucy', this)">Lucy</button>
+    <button class="tablink" onclick="openTab('Joss', this)">Joss</button>
+    <button class="tablink" onclick="openTab('Summary', this)">Summary</button>
 </div>
 
-<div class="container">
-    <div class="signup-form">
-        <h4>Account Information</h4>
-        <h6>Amount: $5</h6>
-        <form action="">
-            <label for="add-funds">Add Funds </label>
-            <input type="number" name="add-funds" id="add-funds" placeholder="Number only">
-            <button type="submit" class="btn btn-primary">Add It</button>
-        </form>
-        <div>
-            Transaction History Table
-        </div>
-    </div>
+<div id="Colin" class="tabcontent">
+    <h2>Name</h2>
+    <section>
+        Information
+    </section>
+    <h3>Transaction Hx Table</h3>
+    <table>
 
+    </table>
 </div>
+
+<div id="Lucy" class="tabcontent">
+    <h2>Name</h2>
+    <section>
+        Information
+    </section>
+    <h3>Transaction Hx Table</h3>
+    <table>
+
+    </table>
+</div>
+
+<div id="Joss" class="tabcontent">
+    <h2>Name</h2>
+    <section>
+        Information
+    </section>
+    <h3>Transaction Hx Table</h3>
+    <table>
+
+    </table>
+</div>
+
+<div id="Summary" class="tabcontent">
+    <h2>Name</h2>
+    <section>
+        Information
+    </section>
+    <h3>Transaction Hx Table</h3>
+    <table>
+
+    </table>
+</div>
+
+
+<!--<div class="container">-->
+<!--    <div class="signup-form">-->
+<!--        <h2>Information</h2>-->
+<!--        <form action="">-->
+<!--            <label for="add-funds">Fundage</label>-->
+<!--            <input type="number" name="add-funds" id="add-funds" placeholder="Number only">-->
+<!--            <button type="submit" class="btn btn-primary">OK</button>-->
+<!--        </form>-->
+<!--        <h4>-->
+<!--            Transaction History Table-->
+<!--        </h4>-->
+<!--        <table>-->
+<!--            Hx all table-->
+<!--        </table>-->
+<!--    </div>-->
+
+<!--</div>-->
+<footer>
+<img src="img/pizzabanner.png" alt="">
+    <a href="">back to top</a>
+</footer>
 
 <script src="./main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script>
+"use strict";
 
+//default show none
+function openTab(pageName, elmnt) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+
+
+    document.getElementById(pageName).style.display = "block";
+
+    elmnt.style.backgroundColor = color;
+
+}
+
+
+
+</script>
 </body>
 </html>
