@@ -28,5 +28,10 @@ module.exports = {
     },
 
     // allows us to see how the transpiled js relates to the untranspiled js
-    devtool: 'source-map'
+    devtool: 'source-map',
+
+    // mode config as suggested by last run prompt 10-15
+    // https://webpack.js.org/configuration/mode/
+
+    mode: 'development'
 };

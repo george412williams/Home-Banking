@@ -114,7 +114,7 @@
     <button class="tablink" onclick="openTab('Colin', this)">Colin</button>
     <button class="tablink" onclick="openTab('Lucy', this)">Lucy</button>
     <button class="tablink" onclick="openTab('Joss', this)">Joss</button>
-    <button class="tablink" onclick="openTab('Summary', this)">Summary</button>
+    <button class="tablink" onclick="openTab('Summary', this)" id="defaultOpen">Summary</button>
 </div>
 
 <div id="Colin" class="tabcontent">
@@ -200,8 +200,16 @@ function openTab(pageName, elmnt) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+//     document.getElementById(childName).style.display = "block";
+//     evt.currentTarget.className += " active";
+// }
 
 
+    document.getElementById("defaultOpen").click();
 
     document.getElementById(pageName).style.display = "block";
 
